@@ -150,7 +150,7 @@ export const Sidebar = ({
         </Stack>
 
         <Button fullWidth color='error' sx={{mt: 2}} onClick={onReset}>
-          Сбросить
+          Сбросить все
         </Button>
       </Paper>
     </Grid>
