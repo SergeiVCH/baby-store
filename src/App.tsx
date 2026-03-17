@@ -19,14 +19,8 @@ import {Sidebar} from './components/Sidebar/Sidebar'
 import {PRODUCT_DATA, type Product} from './data/products'
 import {Analytics} from '@vercel/analytics/react'
 import {FloatingWhatsApp} from './components/FloatingWhatsApp/FloatingWhatsApp'
-
-import {
-  // ... твои текущие импорты
-  Dialog,
-  DialogContent,
-  IconButton,
-} from '@mui/material'
-import CloseIcon from '@mui/icons-material/Close' // Не забудь добавить этот импорт
+import {Dialog, DialogContent, IconButton} from '@mui/material'
+import CloseIcon from '@mui/icons-material/Close'
 
 export const App = () => {
   // --- ТЕМА ---

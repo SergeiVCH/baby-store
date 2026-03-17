@@ -124,29 +124,74 @@ export const Sidebar = ({
           ))}
         </Grid>
 
-        <Typography variant='overline' sx={{fontWeight: 900, opacity: 0.6}}>
+        <Typography
+          variant='overline'
+          sx={{fontWeight: 900, opacity: 0.6, mt: 3, mb: 1, display: 'block'}}>
           Бренды
         </Typography>
-        <Stack>
-          {['Huggies', 'Pampers', 'Moony', 'Genki'].map((b) => (
-            <FormControlLabel
-              key={b}
-              control={
-                <Checkbox
-                  size='small'
-                  checked={selectedBrands.includes(b)}
-                  onChange={(e) =>
-                    setSelectedBrands((prev) =>
-                      e.target.checked
-                        ? [...prev, b]
-                        : prev.filter((x) => x !== b),
-                    )
-                  }
-                />
-              }
-              label={b}
-            />
-          ))}
+
+        <Stack
+          direction='column'
+          spacing={0.5}
+          sx={{alignItems: 'flex-start'}} // Это прижмет все элементы к левому краю
+        >
+          {[
+            'Lolokitty',
+            'Jolico',
+            'Yoyoto',
+            'BABY SHARK',
+            'Мама знает Standard',
+            'TIGGY',
+            'BB KITTY SENSITIVE',
+            'BB KITTY PREMIUM',
+          ].map((b) => {
+            const isChecked = selectedBrands.includes(b)
+            return (
+              <FormControlLabel
+                key={b}
+                sx={{
+                  margin: 0,
+                  width: '100%', // Чтобы область клика была на всю ширину
+                  borderRadius: '6px',
+                  transition: '0.2s',
+                  '&:hover': {backgroundColor: 'rgba(0, 0, 0, 0.04)'},
+                  // Выравниваем чекбокс по верхней линии текста (важно для длинных названий)
+                  alignItems: 'flex-start',
+                }}
+                control={
+                  <Checkbox
+                    size='small'
+                    checked={isChecked}
+                    onChange={(e) =>
+                      setSelectedBrands((prev) =>
+                        e.target.checked
+                          ? [...prev, b]
+                          : prev.filter((x) => x !== b),
+                      )
+                    }
+                    sx={{
+                      p: 1, // Внутренний отступ чекбокса
+                      '&.Mui-checked': {color: '#1a237e'},
+                    }}
+                  />
+                }
+                label={
+                  <Typography
+                    sx={{
+                      fontSize: '0.85rem',
+                      fontWeight: isChecked ? 700 : 500,
+                      color: isChecked ? '#1a237e' : '#444',
+                      textAlign: 'left', // Текст всегда слева
+                      lineHeight: 1.3,
+                      pt: '6px', // Опускаем текст чуть ниже, чтобы он был вровень с чекбоксом
+                      userSelect: 'none',
+                    }}>
+                    {b}
+                  </Typography>
+                }
+              />
+            )
+          })}
         </Stack>
 
         <Button fullWidth color='error' sx={{mt: 2}} onClick={onReset}>
