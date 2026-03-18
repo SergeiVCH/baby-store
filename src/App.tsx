@@ -21,7 +21,7 @@ import {Analytics} from '@vercel/analytics/react'
 import {FloatingWhatsApp} from './components/FloatingWhatsApp/FloatingWhatsApp'
 import {Dialog, DialogContent, IconButton} from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
-import { ScrollToTop } from './components/ScrollToTop/ScrollToTop'
+import {ScrollToTop} from './components/ScrollToTop/ScrollToTop'
 
 export const App = () => {
   // --- ТЕМА ---
@@ -229,7 +229,7 @@ export const App = () => {
         />
         <FloatingWhatsApp />
         <Analytics />
-        <ScrollToTop/>
+        <ScrollToTop />
       </Box>
 
       {/* --- МОДАЛЬНОЕ ОКНО ДЛЯ ПРОСМОТРА КАРТИНКИ --- */}
