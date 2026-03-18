@@ -136,14 +136,15 @@ export const Sidebar = ({
           sx={{alignItems: 'flex-start'}} // Это прижмет все элементы к левому краю
         >
           {[
-            '🐧Lolokitty',
-            '❤Jolico',
-            '💛Yoyoto',
+            '💙Мама знает',
+            '💙МАМА знает Standard',
             '🦈BABY SHARK',
-            '💙Мама знает Standard',
             '🐯TIGGY',
             '🐱BB KITTY SENSITIVE',
             '🐱BB KITTY PREMIUM',
+            '🐧Lolokitty',
+            '❤Jolico',
+            '💛Yoyoto',
           ].map((b) => {
             const isChecked = selectedBrands.includes(b)
             return (
