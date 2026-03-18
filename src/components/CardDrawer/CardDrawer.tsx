@@ -36,7 +36,7 @@ export const CardDrawer = ({
   )
 
   // Функции изменения количества
-  const updateQuantity = (id: number, delta: number) => {
+  const updateQuantity = (id: string, delta: number) => {
     setCart((prev) =>
       prev.map((item) =>
         item.product.id === id
@@ -46,7 +46,7 @@ export const CardDrawer = ({
     )
   }
 
-  const removeItem = (id: number) => {
+  const removeItem = (id: string) => {
     setCart((prev) => prev.filter((item) => item.product.id !== id))
   }
 
