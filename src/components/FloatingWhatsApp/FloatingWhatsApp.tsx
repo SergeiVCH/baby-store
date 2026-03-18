@@ -1,24 +1,28 @@
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Fab, Tooltip, Zoom } from '@mui/material';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'
+import {Fab, Tooltip, Zoom} from '@mui/material'
 
 export const FloatingWhatsApp = () => {
   const handleChat = () => {
     // Номер телефона в международном формате без +
-    const phoneNumber = '7776060935'; 
-    const message = encodeURIComponent('Здравствуйте! У меня есть вопрос по товарам в Baby Mart');
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-  };
+    const phoneNumber = '7776060935'
+    const message = encodeURIComponent(
+      'Здравствуйте! У меня есть вопрос по товарам в Baby Mart',
+    )
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank')
+  }
 
   return (
-    <Zoom in={true} style={{ transitionDelay: '1000ms' }}>
-      <Tooltip title="Написать в WhatsApp" placement="left" arrow>
+    <Zoom in={true} style={{transitionDelay: '1000ms'}}>
+      <Tooltip title='Написать в WhatsApp' placement='left' arrow>
         <Fab
-          color="success"
+          color='success'
           onClick={handleChat}
           sx={{
             position: 'fixed',
-            bottom: { xs: 16, md: 24 }, // На мобилках чуть ниже
-            right: { xs: 16, md: 24 },
+            // Увеличиваем отступ снизу для мобилок (xs)
+            bottom: {xs: 90, md: 100},
+            right: {xs: 20, md: 32},
+            zIndex: 2000,
             bgcolor: '#25D366',
             '&:hover': {
               bgcolor: '#128C7E',
@@ -29,15 +33,14 @@ export const FloatingWhatsApp = () => {
             // Анимация пульсации
             animation: 'pulse 2s infinite',
             '@keyframes pulse': {
-              '0%': { boxShadow: '0 0 0 0 rgba(37, 211, 102, 0.7)' },
-              '70%': { boxShadow: '0 0 0 15px rgba(37, 211, 102, 0)' },
-              '100%': { boxShadow: '0 0 0 0 rgba(37, 211, 102, 0)' },
+              '0%': {boxShadow: '0 0 0 0 rgba(37, 211, 102, 0.7)'},
+              '70%': {boxShadow: '0 0 0 15px rgba(37, 211, 102, 0)'},
+              '100%': {boxShadow: '0 0 0 0 rgba(37, 211, 102, 0)'},
             },
-          }}
-        >
-          <WhatsAppIcon sx={{ fontSize: 32 }} />
+          }}>
+          <WhatsAppIcon sx={{fontSize: 32}} />
         </Fab>
       </Tooltip>
     </Zoom>
-  );
-};
+  )
+}
