@@ -92,8 +92,13 @@ export const App = () => {
       const mSearch =
         p.name.toLowerCase().includes(search.toLowerCase()) ||
         p.brand.toLowerCase().includes(search.toLowerCase())
+      // const mBrand =
+      //   selectedBrands.length === 0 || selectedBrands.includes(p.brand)
       const mBrand =
-        selectedBrands.length === 0 || selectedBrands.includes(p.brand)
+        selectedBrands.length === 0 ||
+        selectedBrands.some(
+          (selected) => selected.toLowerCase() === p.brand.toLowerCase().trim(),
+        )
       const mSize = !selectedSize || p.label === selectedSize
       const mType = !selectedType || p.type === selectedType
       const mPrice = p.price >= priceRange[0] && p.price <= priceRange[1]

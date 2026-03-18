@@ -17,7 +17,7 @@ export type Product = {
 export const PRODUCT_DATA: Product[] = [
   {
     id: v1(),
-    brand: 'BABY SHARK',
+    brand: '🦈BABY SHARK',
     name: '',
     type: 'pants',
     size: '3 (6-11 кг)',
@@ -27,7 +27,7 @@ export const PRODUCT_DATA: Product[] = [
   },
   {
     id: v1(),
-    brand: 'BABY SHARK',
+    brand: '🦈BABY SHARK',
     name: '',
     type: 'pants',
     size: '3 (12-20 кг)',
@@ -37,7 +37,7 @@ export const PRODUCT_DATA: Product[] = [
   },
   {
     id: v1(),
-    brand: 'BABY SHARK',
+    brand: '🦈BABY SHARK',
     name: '',
     type: 'pants',
     size: '3 (9-14 кг)',
@@ -47,7 +47,7 @@ export const PRODUCT_DATA: Product[] = [
   },
   {
     id: v1(),
-    brand: 'BABY SHARK',
+    brand: '🦈BABY SHARK',
     name: '',
     type: 'pants',
     size: '3 (15+ кг)',
@@ -58,7 +58,7 @@ export const PRODUCT_DATA: Product[] = [
 
   {
     id: v1(),
-    brand: 'BABY SHARK',
+    brand: '🦈BABY SHARK',
     name: '',
     type: 'pants',
     size: '3 (19+ кг)',
@@ -72,7 +72,7 @@ export const PRODUCT_DATA: Product[] = [
 
   {
     id: v1(),
-    brand: 'BABY SHARK',
+    brand: '🦈BABY SHARK',
     name: '',
     type: 'diapers',
     size: '3 (4 - 8 кг)',
@@ -82,7 +82,7 @@ export const PRODUCT_DATA: Product[] = [
   },
   {
     id: v1(),
-    brand: 'BABY SHARK',
+    brand: '🦈BABY SHARK',
     name: '',
     type: 'diapers',
     size: '3 (2 - 5 кг)',
@@ -94,7 +94,7 @@ export const PRODUCT_DATA: Product[] = [
   // 🐧Lolokitty 5000 тг
   {
     id: v1(),
-    brand: 'Lolokitty',
+    brand: '🐧Lolokitty',
     name: '',
     type: 'diapers',
     size: '3 (2 - 5 кг)',
@@ -105,7 +105,7 @@ export const PRODUCT_DATA: Product[] = [
   // ❤Jolico 4500 тг
   {
     id: v1(),
-    brand: 'Jolico',
+    brand: '❤Jolico',
     name: '',
     type: 'diapers',
     size: '3 (2 - 5 кг)',
@@ -127,7 +127,7 @@ export const PRODUCT_DATA: Product[] = [
   // 💙Мама знает Standard 5300 тг
   {
     id: v1(),
-    brand: 'Мама знает Standard',
+    brand: '💙Мама знает Standard',
     name: '',
     type: 'diapers',
     size: '3 (2 - 5 кг)',
@@ -138,7 +138,7 @@ export const PRODUCT_DATA: Product[] = [
   // 💙МАМА ЗНАЕТ 7200 ТГ
   {
     id: v1(),
-    brand: 'Мама знает',
+    brand: '💙МАМА знает',
     name: '',
     type: 'diapers',
     size: '3 (2 - 5 кг)',
@@ -160,7 +160,7 @@ export const PRODUCT_DATA: Product[] = [
   // 🐱BB KITTY SENSITIVE 6500 тг
   {
     id: v1(),
-    brand: 'BB KITTY SENSITIVE',
+    brand: '🐱BB KITTY SENSITIVE',
     name: '',
     type: 'diapers',
     size: '3 (2 - 5 кг)',
@@ -171,7 +171,7 @@ export const PRODUCT_DATA: Product[] = [
   // 🐱BB KITTY PREMIUM 7000 тг
   {
     id: v1(),
-    brand: 'BB KITTY PREMIUM',
+    brand: '🐱BB KITTY PREMIUM',
     name: '',
     type: 'diapers',
     size: '3 (2 - 5 кг)',
