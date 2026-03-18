@@ -5,7 +5,7 @@ export const FloatingWhatsApp = () => {
   const handleChat = () => {
     // Номер телефона в международном формате без +
     const phoneNumber = '7776060935'; 
-    const message = encodeURIComponent('Здравствуйте! У меня есть вопрос по товарам в Baby Mart 🧸');
+    const message = encodeURIComponent('Здравствуйте! У меня есть вопрос по товарам в Baby Mart');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
   };
 

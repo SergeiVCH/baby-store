@@ -112,7 +112,7 @@ export const Sidebar = ({
           Размер
         </Typography>
         <Grid container spacing={1} sx={{mb: 3}}>
-          {['S', 'M', 'L', 'XL'].map((s) => (
+          {['S', 'M', 'L', 'XL', 'XXL', 'XXXL'].map((s) => (
             <Grid size={6} key={s}>
               <Button
                 fullWidth
@@ -136,15 +136,15 @@ export const Sidebar = ({
           sx={{alignItems: 'flex-start'}} // Это прижмет все элементы к левому краю
         >
           {[
-            '💙Мама знает',
-            '💙МАМА знает Standard',
+            '💙 Мама знает',
+            '💙 МАМА знает Standard',
             '🦈BABY SHARK',
-            '🐯TIGGY',
-            '🐱BB KITTY SENSITIVE',
-            '🐱BB KITTY PREMIUM',
-            '🐧Lolokitty',
-            '❤Jolico',
-            '💛Yoyoto',
+            '🐯 TIGGY',
+            '🐱 BB KITTY SENSITIVE',
+            '🐱 BB KITTY PREMIUM',
+            '🐧 Lolokitty',
+            '❤ Jolico',
+            '💛 Yoyoto',
           ].map((b) => {
             const isChecked = selectedBrands.includes(b)
             return (

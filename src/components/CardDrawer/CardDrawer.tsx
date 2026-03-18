@@ -52,7 +52,7 @@ export const CardDrawer = ({
 
   const handleOrder = () => {
     const text = encodeURIComponent(
-      `Заказ из Baby Mart:\n${cart.map((i) => `• ${i.product.brand} ${i.product.name} x${i.quantity}`).join('\n')}\n\nСумма: ${totalPrice.toLocaleString()} ₸`,
+      `Заказ из Baby Mart:\n ${cart.map((i) => `•${i.product.brand} ${i.product.name} x${i.quantity} ${i.product.type} ${i.product.size} ${i.product.label}`).join('\n')}\n\nСумма: ${totalPrice.toLocaleString()} ₸`,
     )
     window.open(`https://wa.me/7776060935?text=${text}`, '_blank')
   }
