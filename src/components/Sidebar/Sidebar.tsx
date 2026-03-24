@@ -217,7 +217,7 @@ export const Sidebar = ({
               letterSpacing: 1,
               textTransform: 'uppercase',
             }}>
-            Разработка и поддержка
+            Разработка сайта:
           </Typography>
 
           <Button
@@ -228,7 +228,7 @@ export const Sidebar = ({
             rel='noopener noreferrer'
             // startIcon={<CodeIcon sx={{fontSize: 18}} />}
             sx={{
-              bgcolor: '#000050', // Темно-синий из логотипа Baby Mart
+              bgcolor: '#2a2ad2', // Темно-синий из логотипа Baby Mart
               color: '#fff',
               borderRadius: '12px', // Округлые формы как у всего сайта
               textTransform: 'none',
@@ -237,13 +237,13 @@ export const Sidebar = ({
               py: 1,
               boxShadow: 'none',
               '&:hover': {
-                bgcolor: alpha('#000050', 0.9),
+                bgcolor: alpha('#6363ce', 0.9),
                 boxShadow: '0 4px 12px rgba(0,0,80,0.2)',
                 transform: 'translateY(-1px)',
               },
               transition: 'all 0.2s ease-in-out',
             }}>
-            Смотреть портфолио разработчика
+            Сергей Чертов
           </Button>
         </Box>
       </Paper>

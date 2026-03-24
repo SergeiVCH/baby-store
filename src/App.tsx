@@ -165,11 +165,9 @@ export const App = () => {
                 <Typography
                   variant='h4'
                   sx={{fontWeight: 900, color: 'primary.main'}}>
-                  СКИДКА -15%
+                  Доставка до адреса!
                 </Typography>
-                <Typography variant='body1'>
-                  На все японские подгузники!
-                </Typography>
+                <Typography variant='body1'>Детали уточняйте 📞</Typography>
               </Paper>
 
               {filteredProducts.length > 0 ? (
