@@ -85,6 +85,9 @@ export const App = () => {
           )
         : [...prev, {product, quantity: 1}]
     })
+
+    // ДОБАВЛЯЕМ ЗДЕСЬ:
+    setOpenSnack(true)
   }
 
   // --- ФИЛЬТРАЦИЯ ---
@@ -273,7 +276,7 @@ export const App = () => {
       </Dialog>
       <Snackbar
         open={openSnack}
-        autoHideDuration={2000}
+        autoHideDuration={3000}
         onClose={() => setOpenSnack(false)}>
         <Alert severity='success' sx={{width: '100%'}}>
           Товар добавлен в корзину! 🛒
