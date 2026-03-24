@@ -1,4 +1,5 @@
 import {
+  alpha,
   Box,
   Button,
   Checkbox,
@@ -8,7 +9,7 @@ import {
   Stack,
   Typography,
 } from '@mui/material'
-import Grid from '@mui/material/Grid' // Используй Grid2, как на твоих скриншотах
+import Grid from '@mui/material/Grid'; // Используй Grid2, как на твоих скриншотах
 
 export type SidebarProps = {
   sortBy: 'asc' | 'desc' | null
@@ -198,6 +199,53 @@ export const Sidebar = ({
         <Button fullWidth color='error' sx={{mt: 2}} onClick={onReset}>
           Сбросить все
         </Button>
+        <Box
+          sx={{
+            mt: 4,
+            pt: 3,
+            borderTop: '1px dashed',
+            borderColor: 'divider',
+            textAlign: 'center',
+          }}>
+          <Typography
+            variant='caption'
+            sx={{
+              color: 'text.secondary',
+              display: 'block',
+              mb: 1.5,
+              fontSize: '0.7rem',
+              letterSpacing: 1,
+              textTransform: 'uppercase',
+            }}>
+            Разработка и поддержка
+          </Typography>
+
+          <Button
+            fullWidth
+            variant='contained'
+            href='https://sergei-dev.netlify.app/' // Замени на свою ссылку Netlify
+            target='_blank'
+            rel='noopener noreferrer'
+            // startIcon={<CodeIcon sx={{fontSize: 18}} />}
+            sx={{
+              bgcolor: '#000050', // Темно-синий из логотипа Baby Mart
+              color: '#fff',
+              borderRadius: '12px', // Округлые формы как у всего сайта
+              textTransform: 'none',
+              fontWeight: 600,
+              fontSize: '0.85rem',
+              py: 1,
+              boxShadow: 'none',
+              '&:hover': {
+                bgcolor: alpha('#000050', 0.9),
+                boxShadow: '0 4px 12px rgba(0,0,80,0.2)',
+                transform: 'translateY(-1px)',
+              },
+              transition: 'all 0.2s ease-in-out',
+            }}>
+            Смотреть портфолио разработчика
+          </Button>
+        </Box>
       </Paper>
     </Grid>
   )
