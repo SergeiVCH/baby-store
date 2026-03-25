@@ -1,11 +1,11 @@
+import AddIcon from '@mui/icons-material/Add'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline'
 import RemoveIcon from '@mui/icons-material/Remove'
-import AddIcon from '@mui/icons-material/Add'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import {
+  alpha,
   Box,
   Button,
-  Divider,
   Drawer,
   IconButton,
   ListItem,
@@ -14,6 +14,7 @@ import {
 } from '@mui/material'
 import type {Product} from '../../data/products'
 
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 interface CardDrawerProps {
   isOpen: boolean
   onClose: () => void
@@ -67,10 +68,32 @@ export const CardDrawer = ({
           flexDirection: 'column',
           height: '100%',
         }}>
-        <Typography variant='h5' sx={{fontWeight: 900, mb: 3}}>
-          Корзина
-        </Typography>
-        <Divider />
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 2,
+            mb: 3,
+            pb: 2,
+            borderBottom: '1px solid',
+            borderColor: 'divider',
+          }}>
+          {/* Кнопка "Назад" для мобильных и десктопа */}
+          <IconButton
+            onClick={onClose}
+            sx={{
+              bgcolor: (theme) => alpha(theme.palette.primary.main, 0.08),
+              '&:hover': {
+                bgcolor: (theme) => alpha(theme.palette.primary.main, 0.15),
+              },
+            }}>
+            <ArrowBackIosNewIcon sx={{fontSize: 18, color: 'primary.main'}} />
+          </IconButton>
+
+          <Typography variant='h5' sx={{fontWeight: 800}}>
+            Корзина
+          </Typography>
+        </Box>
 
         <Box sx={{flexGrow: 1, overflowY: 'auto', py: 2}}>
           {cart.map((item) => (
