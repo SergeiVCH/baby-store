@@ -101,16 +101,40 @@ export const CardDrawer = ({
               key={item.product.id}
               sx={{px: 0, mb: 2, display: 'block'}}>
               <Stack direction='row' justifyContent='space-between'>
-                <Typography sx={{fontWeight: 700}}>
-                  {item.product.brand} {item.product.name}
-                </Typography>
-                <IconButton
-                  size='small'
-                  color='error'
-                  onClick={() => removeItem(item.product.id)}>
-                  <DeleteOutlineIcon />
-                </IconButton>
-              </Stack>
+  <Typography sx={{fontWeight: 700}}>
+    {item.product.brand} {item.product.name}
+  </Typography>
+  <IconButton
+    size='small'
+    color='error'
+    onClick={() => removeItem(item.product.id)}>
+    <DeleteOutlineIcon />
+  </IconButton>
+</Stack>
+
+{/* --- ДОБАВЬ ЭТОТ БЛОК ТУТ --- */}
+<Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mt: 0.5 }}>
+  <Typography 
+    variant="caption" 
+    sx={{ 
+      bgcolor: 'action.hover', 
+      color: 'text.secondary',
+      px: 1,
+      py: 0.3,
+      borderRadius: 1.5,
+      fontWeight: 700,
+      border: '1px solid',
+      borderColor: 'divider'
+    }}
+  >
+    Размер: {item.product.label}
+  </Typography>
+  
+  {/* Дополнительно можно вывести тип товара (трусики/подгузники) */}
+  <Typography variant="caption" sx={{ color: 'text.disabled' }}>
+    {item.product.type === 'pants' ? 'Трусики' : 'Подгузники'}
+  </Typography>
+</Box>
               <Stack
                 direction='row'
                 alignItems='center'
