@@ -21,7 +21,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '1 (2 - 5 кг)',
     label: 'NB',
     price: 7200,
-    img: '',
+    img: 'https://i.ibb.co.com/1Y4XqcsS/Whats-App-Image-2026-03-24-at-20-22-48.jpg',
   },
   {
     id: v1(),
@@ -31,7 +31,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '2 (4 - 8 кг)',
     label: 'S',
     price: 7200,
-    img: '',
+    img: 'https://i.ibb.co.com/XrXMqKqk/Whats-App-Image-2026-03-24-at-20-2112-48.jpg',
   },
   {
     id: v1(),
@@ -41,7 +41,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '3 (6 - 11 кг)',
     label: 'M',
     price: 7200,
-    img: '',
+    img: 'https://i.ibb.co.com/zT7x41R3/Whats-App-Image-2026-03-24-at-20-22111-48.jpg',
   },
   {
     id: v1(),
@@ -51,7 +51,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '4 (9 - 14 кг)',
     label: 'L',
     price: 7200,
-    img: '',
+    img: 'https://i.ibb.co.com/sp2zBhyQ/Whats-App-Image-2026-03-24-at-20-22-111149.jpg',
   },
   {
     id: v1(),
@@ -61,7 +61,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '5 (12 - 18 кг)',
     label: 'XL',
     price: 7200,
-    img: '',
+    img: 'https://i.ibb.co.com/DDD3n8HV/Whats-App-Image-2026-03-24-at-20-211112-49.jpg',
   },
   {
     id: v1(),
@@ -71,7 +71,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '6 (15 - 22 кг)',
     label: 'XXL',
     price: 7200,
-    img: '',
+    img: 'https://i.ibb.co.com/5XqvkQNS/Whats-App-Image-2026-03-24-at-20111-22-47.jpg',
   },
   {
     id: v1(),
@@ -81,7 +81,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '7 (20 - 30 кг)',
     label: 'XXXL',
     price: 7200,
-    img: '',
+    img: 'https://i.ibb.co.com/0yHTRrLc/Whats-App-Image-2026-03-24-a11111t-20-22-49.jpg',
   },
   // 💙Мама знает Standard 5300 тг
   {
@@ -92,7 +92,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '2 (3 - 7 кг)',
     label: 'S',
     price: 5300,
-    img: '',
+    img: 'https://i.ibb.co.com/hFL2mZTY/Whats-App-Image-2026-03-26-at-17-51-11147.jpg',
   },
   {
     id: v1(),
@@ -102,17 +102,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '3 (6 - 12 кг)',
     label: 'M',
     price: 5300,
-    img: '',
-  },
-  {
-    id: v1(),
-    brand: '💙Мама знает Standard',
-    name: '',
-    type: 'pants',
-    size: '3 (7 - 10 кг)',
-    label: 'M',
-    price: 5300,
-    img: '',
+    img: 'https://i.ibb.co.com/qL2Wh2zN/Whats-App-Image-2026-03-26-at-17-51-47.jpg',
   },
   {
     id: v1(),
@@ -122,7 +112,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '4 (9 - 14 кг)',
     label: 'L',
     price: 5300,
-    img: '',
+    img: 'https://i.ibb.co.com/3my08gm4/Whats-App-Image-2026-03-26-at-17-51-111147.jpg',
   },
   {
     id: v1(),
@@ -132,7 +122,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '5 (12 - 17 кг)',
     label: 'XL',
     price: 5300,
-    img: '',
+    img: 'https://i.ibb.co.com/ymnwNtyV/Whats-App-Image-2026-03-26-at-17-51111-47.jpg',
   },
   // 🦈BABY SHARK 6500 тг
   // diapers памперсы
@@ -304,7 +294,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '5 (больше 15 кг)',
     label: 'XL',
     price: 7000,
-    img: 'добавить',
+    img: 'https://i.ibb.co.com/cc0Gkj4q/Whats-App-Image-2026-03-26-at-17-56-04.jpg',
   },
   {
     id: v1(),
@@ -326,7 +316,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '4 (9 - 14 кг)',
     label: 'L',
     price: 5000,
-    img: 'добавить',
+    img: 'https://i.ibb.co.com/zT0gKwm3/Whats-App-Image-2026-03-26-at-17-51116-05.jpg',
   },
   {
     id: v1(),
@@ -336,7 +326,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '5 (12 - 17 кг)',
     label: 'XL',
     price: 5000,
-    img: 'добавить',
+    img: 'https://i.ibb.co.com/CKWpX7hL/Whats-App-Image-2026-03-26-at-1711-56-05.jpg',
   },
   {
     id: v1(),
@@ -346,7 +336,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '6 (больше 15)',
     label: 'XXL',
     price: 5000,
-    img: 'добавить',
+    img: 'https://i.ibb.co.com/x8MfdVm4/Whats-App-Image-2026-03-26-at-17-56-04.jpg',
   },
   // ❤Jolico 4500 тг
   {
@@ -357,7 +347,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '2 (4 - 8 кг)',
     label: 'S',
     price: 4500,
-    img: '',
+    img: 'https://i.ibb.co.com/BKFwW8GR/Whats-App-Image-2026-03-26-at-18-04-07.jpg',
   },
   {
     id: v1(),
@@ -367,7 +357,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '6 (15 - 20 кг)',
     label: 'XXL',
     price: 4500,
-    img: '',
+    img: 'https://i.ibb.co.com/SDzRpPJ4/Whats-App-Image-2026-03-26-at-18-03-20.jpg',
   },
   // 💛Yoyoto 4500 тг
   {
@@ -378,7 +368,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '3 (6 - 14 кг)',
     label: 'M',
     price: 4500,
-    img: '',
+    img: 'https://i.ibb.co.com/jPMyGNBx/Whats-App-Image-2026-03-26-at-17-56-04.jpg',
   },
   {
     id: v1(),
@@ -388,7 +378,7 @@ export const PRODUCT_DATA: Product[] = [
     size: '5 (7 - 14 кг)',
     label: 'XL',
     price: 4500,
-    img: '',
+    img: 'https://i.ibb.co.com/jPMyGNBx/Whats-App-Image-2026-03-26-at-17-56-04.jpg',
   },
   {
     id: v1(),
@@ -398,6 +388,6 @@ export const PRODUCT_DATA: Product[] = [
     size: '5 (7 - 14 кг)',
     label: 'XL',
     price: 4500,
-    img: '',
+    img: 'https://i.ibb.co.com/jPMyGNBx/Whats-App-Image-2026-03-26-at-17-56-04.jpg',
   },
 ]
