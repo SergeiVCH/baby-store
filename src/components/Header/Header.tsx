@@ -81,7 +81,7 @@ export const Header = ({
 
               {/* Быстрый звонок */}
               <Tooltip title='Позвонить нам'>
-                <IconButton href='tel:+7776060935' sx={{color: 'primary.main'}}>
+                <IconButton href='tel:+77776060935' sx={{color: 'primary.main'}}>
                   <LocalPhoneIcon />
                 </IconButton>
               </Tooltip>
