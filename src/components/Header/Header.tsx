@@ -72,7 +72,7 @@ export const Header = ({
               {/* Ссылка на Instagram */}
               <Tooltip title='Мы в Instagram'>
                 <IconButton
-                  href='https://instagram.com/твой_логин'
+                  href='https://www.instagram.com/podguzniki_smirnovo?igsh=MTJsMnlhOG16cW5iMw=='
                   target='_blank'
                   sx={{color: mode === 'light' ? '#E1306C' : '#ff4081'}}>
                   <InstagramIcon />
@@ -81,7 +81,9 @@ export const Header = ({
 
               {/* Быстрый звонок */}
               <Tooltip title='Позвонить нам'>
-                <IconButton href='tel:+77776060935' sx={{color: 'primary.main'}}>
+                <IconButton
+                  href='tel:+77776060935'
+                  sx={{color: 'primary.main'}}>
                   <LocalPhoneIcon />
                 </IconButton>
               </Tooltip>
