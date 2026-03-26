@@ -13,6 +13,10 @@ import {
   Typography,
 } from '@mui/material'
 
+import InstagramIcon from '@mui/icons-material/Instagram'
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
+import {Tooltip} from '@mui/material'
+
 type HeaderProps = {
   search: string
   setSearch: (value: string) => void
@@ -62,7 +66,26 @@ export const Header = ({
               startAdornment: <SearchIcon sx={{mr: 1, opacity: 0.4}} />,
             }}
           />
+
           <Stack direction='row' spacing={1}>
+            <Stack direction='row' spacing={1} sx={{mr: 2}}>
+              {/* Ссылка на Instagram */}
+              <Tooltip title='Мы в Instagram'>
+                <IconButton
+                  href='https://instagram.com/твой_логин'
+                  target='_blank'
+                  sx={{color: mode === 'light' ? '#E1306C' : '#ff4081'}}>
+                  <InstagramIcon />
+                </IconButton>
+              </Tooltip>
+
+              {/* Быстрый звонок */}
+              <Tooltip title='Позвонить нам'>
+                <IconButton href='tel:+7776060935' sx={{color: 'primary.main'}}>
+                  <LocalPhoneIcon />
+                </IconButton>
+              </Tooltip>
+            </Stack>
             <IconButton
               onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}>
               <Brightness4Icon />

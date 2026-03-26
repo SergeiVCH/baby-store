@@ -126,6 +126,7 @@ export const App = () => {
           cartCount={cart.reduce((total, item) => total + item.quantity, 0)}
           setIsCartOpen={() => setIsCartOpen(true)}
         />
+
         <Container maxWidth='xl' sx={{mt: 4}}>
           <Grid container spacing={3}>
             {/* SIDEBAR */}
