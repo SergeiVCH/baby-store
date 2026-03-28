@@ -227,8 +227,13 @@ export const App = () => {
           cart={cart}
           setCart={setCart}
         />
-        {!isCartOpen && <FloatingWhatsApp />} <Analytics />
-        <ScrollToTop />
+        {!isCartOpen && (
+          <>
+            <FloatingWhatsApp />
+            <ScrollToTop />
+          </>
+        )}
+        <Analytics />
       </Box>
 
       {/* --- МОДАЛЬНОЕ ОКНО ДЛЯ ПРОСМОТРА КАРТИНКИ --- */}
