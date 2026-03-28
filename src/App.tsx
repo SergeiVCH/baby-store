@@ -126,7 +126,6 @@ export const App = () => {
           cartCount={cart.reduce((total, item) => total + item.quantity, 0)}
           setIsCartOpen={() => setIsCartOpen(true)}
         />
-
         <Container maxWidth='xl' sx={{mt: 4}}>
           <Grid container spacing={3}>
             {/* SIDEBAR */}
@@ -221,7 +220,6 @@ export const App = () => {
             </Grid>
           </Grid>
         </Container>
-
         {/* CART DRAWER */}
         <CardDrawer
           isOpen={isCartOpen}
@@ -229,8 +227,7 @@ export const App = () => {
           cart={cart}
           setCart={setCart}
         />
-        <FloatingWhatsApp />
-        <Analytics />
+        {!isCartOpen && <FloatingWhatsApp />} <Analytics />
         <ScrollToTop />
       </Box>
 
